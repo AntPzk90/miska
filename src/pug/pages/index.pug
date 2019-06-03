@@ -1,0 +1,111 @@
+extends .././layouts/main-layout.pug
+block content
+    main.page-main
+        section.represent
+            h1.vis-hid
+                | магазин вязаных товаров ручной работы
+            .represent__wrapper.container
+                b.represetnt__title
+                    | Милые штуки ручной работы для дома
+                ul.represent-list
+                    li.represent-list__item
+                        a(href="#").represent-list__link
+                            | Предметы интерьера
+                    li.represent-list__item
+                        a(href="#").represent-list__link
+                            | Детские игрушки
+        section.week-product
+            .week-product__wrapper
+                .week-product__title-wrapper
+                    h2.week-product__title
+                        | Товар недели
+                    h2.product-title.title__h2
+                        | Вязаные корзинки  
+                .week-product__dscr-wrapper
+                    p.week-product__dscr
+                            | Экологически чистая пряжа, ручная работа.
+                            | Доступны в шести расцветках, и трех размерах.
+                    table.week-prouct__data.data-table
+                        tr.data-table__tr
+                            td.data-table__td.data-table__title
+                                | Цвет
+                            td.data-table__td.data-table__value
+                                | &laquo;тиффани&raquo;/серый
+                        tr.data-table__tr
+                            td.data-table__td.data-table__title
+                                | Диаметр
+                            td.data-table__td.data-table__value
+                                | 25 см
+                        tr.data-table__tr
+                            td.data-table__td.data-table__title
+                                | Высота
+                            td.data-table__td.data-table__value
+                                | 15 см
+                    .week-product__img-wrapper
+                        img.week-product__img
+                    .week-product__price-wrapper
+                        p.week-product__price
+                            | 990 р.
+                        a.week-product__price-btn.btn
+                            | Заказать
+        section.about-us
+            .about-us__wrapper
+                h2.about-us__title.title__h2
+                    | Коротко о нас
+                ul.about-us__list
+                    li.about-us__list-item
+                        | Экологически чистые материалы
+                    li.about-us__list-item
+                        | Скандинавский стиль по российской цене
+                    li.about-us__list-item
+                        | Увеличивает лайки на фотографиях
+                    li.about-us__list-item
+                        | Связано вручную с любовью и умилением
+                    li.about-us__list-item
+                        | Поддержка отечественного производителя
+                    li.about-us__list-item
+                        | Поставляется в подарочной упаковке
+        section.reviews
+            .reviews__wrapper
+                h2.reviews__title.title__h2
+                    | Отзывы
+                p.reviews__txt
+                    | Я молодая мама, но всё равно фотографии не
+                    | набирали и близко такого количества лайков,
+                    | как у популярных инстамамочек. В отчаянии,
+                    | я накупила аксессуаров и игрушек в Мишке,
+                    | и мои фотографии сразу стали более стильными,
+                    | а также набирают больше лайков!
+                p.reviews-author__wrapper
+                    span.reviews-author__name
+                        | Анастасия Красильникова
+                    span.reviews-author__nick
+                        | @misssssiskras
+                .reviews-arrow__wrapper
+                    button.review-arrow.left-arrow
+                    button.review-arrow.right-arrow
+                a(href="#").reviews__btn.btn
+                    | Написать
+        section.contacts
+            .contacts__wrapper
+                h2.contacts__title.title__h2
+                    | Контакты    
+                table.contacts-data.data-table
+                    tr.data-table__tr
+                        td.data-table__td.data-table__title
+                            | e-mail:
+                        td.data-table__td.data-table__value
+                            | nfo@mimimishkashop.ru
+                    tr.data-table__tr
+                        td.data-table__td.data-table__title
+                            | Адрес:
+                        td.data-table__td.data-table__value
+                            | г. Санкт-Петербург,
+                            br
+                            | ул. Большая Конюшенная,
+                            br
+                            | д. 19/8, офис 101
+                a(href="#").contacts__btn.btn
+                    | Напишите нам
+                .contacts__map
+                    img.map-img
