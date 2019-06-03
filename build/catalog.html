@@ -9,32 +9,31 @@
     <title>index</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="header__wrapper container">
         <nav class="main-nav"><a class="header__logo logo"><img class="logo-image"/></a>
           <ul class="main-nav__list site-list">
             <li class="site-list__item"><a href="catalog.html">каталог товаров</a></li>
             <li class="site-list__item"><a href="form.html">вязание на заказ</a></li>
           </ul>
-          <div class="header__user-wrapper user-block">
-            <form class="user-block__search">
-              <input class="search-input"/>
-              <button class="hidden-btn" type="sybmit">найти</button>
-            </form>
-            <div class="user-block__basket"><a class="basket-link" href="#">Корзина: пока пуста</a></div>
-          </div>
         </nav>
+        <div class="header__user-wrapper user-block">
+          <form class="user-block__search search-form">
+            <input class="search-form__input"/>
+            <button class="search-form__btn hidden-btn" type="sybmit">найти</button>
+          </form><a class="user-block__basket-link" href="#">Корзина: пока пуста</a>
+        </div>
       </div>
     </header>
   </body>
 </html>
-<footer>
+<footer class="footer">
   <div class="footer__wrapper"><a class="footer__logo logo"><img class="logo-image"/></a>
-    <ul class="social-list">
-      <li class="social-list__item"><a href="#"></a></li>
-      <li class="social-list__item"><a href="#"></a></li>
-      <li class="social-list__item"><a href="#"></a></li>
+    <ul class="fooetr__social-list">
+      <li class="fooetr__social-list-item"><a href="#"></a></li>
+      <li class="fooetr__social-list-item"><a href="#"></a></li>
+      <li class="fooetr__social-list-item"><a href="#"></a></li>
     </ul>
-    <p class="developed-by">разработано<a class="developed-by__logo" href="#"><img src="" alt="academy-logo"/></a></p>
+    <p class="footer__developed-by">разработано<a class="footer__developed-by-logo" href="#"><img src="" alt="academy-logo"/></a></p>
   </div>
 </footer>

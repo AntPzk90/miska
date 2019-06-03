@@ -8,18 +8,17 @@ html(lang="en")
         block title
         title index
     body
-        header
+        header.header
             .header__wrapper.container
                 nav.main-nav
                     a.header__logo.logo
                         img.logo-image
                     ul.main-nav__list.site-list
                         +navList(navItems)
-                    .header__user-wrapper.user-block
-                        form.user-block__search
-                            input.search-input
-                            button.hidden-btn(type="sybmit")
-                                | найти
-                        .user-block__basket
-                            a(href="#").basket-link
-                                | Корзина: пока пуста
+                .header__user-wrapper.user-block
+                    form.user-block__search.search-form
+                        input.search-form__input
+                        button.search-form__btn.hidden-btn(type="sybmit")
+                            | найти
+                    a(href="#").user-block__basket-link
+                        | Корзина: пока пуста
