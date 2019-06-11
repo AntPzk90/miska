@@ -1,0 +1,110 @@
+.represent{
+    background-color: #fafafa;
+    padding-top: 70px;
+    border-top: 1px solid #eee;
+    background-image: url("../imgs/mobile/hero-mobile@1x.jpg");
+    background-size: 575px 375px;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    position: relative;
+    @media (min-resolution: 140dpi) and  (min-resolution: 1.5dppx){
+        background-image: url("../imgs/mobile/hero-mobile@2x.jpg");
+    }
+    @media screen and  (min-width:$tablet){
+        padding-top: 78px;
+        background-image: url("../imgs/tablet/hero-tablet@1x.jpg");
+        background-size: 1150px 746px;
+        @media (min-resolution: 140dpi) and (min-resolution: 1.5dppx){
+            background-image: url("../imgs/tablet/hero-tablet@2x.jpg");
+        }
+    }
+    @media screen and  (min-width:$desktop){
+        background-image: url("../imgs/desktop/hero-desktop@1x.jpg");
+        background-size: cover;
+        @media (min-resolution: 140dpi) and (min-resolution: 1.5dppx){
+            background-image: url("../imgs/desktop/hero-desktop@2x.jpg");
+        }
+    }
+    &:after{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 24px;
+        background-image: url("../imgs/sprite.svg#bg-zigzag-fill");
+        position: absolute;
+        background-size:774px auto;
+        background-position: 0%;
+        bottom: -3px;
+        @media screen and  (min-width:$desktop){
+            height: 34px;
+            background-size: 1150px auto;
+            bottom: -3px;
+        }
+    }
+}
+.represent__wrapper{
+    text-align: center;
+    min-height: 305px;
+    @media screen and  (min-width:$tablet){
+        padding-top: 80px;
+    }
+}
+.represetnt__title{
+    display: inline-block;
+    font-size: 27px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 140px;
+    @media screen and  (min-width:$tablet){
+        display: block;
+        width: 520px;
+        margin:0 auto;
+        font-size: 43px;
+        line-height: 50px;
+        margin-bottom: 360px;
+    }
+    @media screen and  (min-width:$desktop){
+        display: block;
+        width: 620px;
+        margin:0 auto;
+        font-size: 53px;
+        line-height: 57px;
+        margin-bottom: 355px;
+    }
+}
+.represent__list{
+    @include list-reset;
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    @media screen and  (min-width:$tablet){
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.represent__list-item{
+    padding: 24px 30px;
+    background-color: #63d1bb;
+    text-align: left;
+    &:nth-child(2n){
+        background-color: #56c3b2;
+    }
+    a{
+        color: #fff;
+        font-size: 19px;
+        line-height: 24px;
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+        width: 130px;
+        @media screen and  (min-width:$desktop){
+            font-size: 20px;
+            line-height: 30px;  
+          }
+    }
+    @media screen and  (min-width:$tablet){
+      width: 50%;
+      padding-bottom: 50px;
+    }
+}

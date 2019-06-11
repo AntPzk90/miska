@@ -10,18 +10,29 @@
   <body>
     <header class="header">
       <div class="header__wrapper container">
-        <nav class="main-nav"><a class="header__logo logo"><img class="logo-image"/></a>
-          <ul class="main-nav__list site-list">
+        <button class="header__mobile header__mobile--close"></button><a class="header__logo logo" href="index.html">
+          <picture class="header__logo-picture">
+            <source media="(max-width:768px)" srcset="imgs/sprite.svg#logo-mobile"/>
+            <source media="(max-width:1150px)" srcset="imgs/sprite.svg#logo-tablet"/>
+            <source media="(min-width:1150px)" srcset="imgs/sprite.svg#logo-desktop"/><img src="imgs/sprite.svg#logo-mobile" alt="logo"/>
+          </picture></a>
+        <nav class="header__main-nav">
+          <ul class="site-list">
             <li class="site-list__item"><a href="catalog.html">каталог товаров</a></li>
             <li class="site-list__item"><a href="form.html">вязание на заказ</a></li>
           </ul>
         </nav>
-        <div class="header__user-wrapper user-block">
-          <form class="user-block__search search-form">
-            <input class="search-form__input"/>
-            <button class="search-form__btn hidden-btn" type="sybmit">найти</button>
-          </form><a class="user-block__basket-link" href="#">Корзина: пока пуста</a>
+        <div class="header__user-wrapper">
+          <form class="header__search search-form">
+            <input class="search-form__input" type="text" name="search" placeholder="Поиск по сайту"/>
+            <button class="search-form__hidden-btn" type="sybmit">найти</button>
+          </form><a class="header__basket-link basket-link" href="#">Корзина: пока пуста</a>
         </div>
+        <p class="header__delivery">Бесплатная доставка по России</p>
+        <ul class="header__more-list">
+          <li class="header__more-list-item"><a href="#">Новые поступления</a></li>
+          <li class="header__more-list-item"><a href="#">Распродажа</a></li>
+        </ul>
       </div>
     </header>
   </body>
@@ -30,17 +41,17 @@
   <section class="represent">
     <h1 class="vis-hid">магазин вязаных товаров ручной работы</h1>
     <div class="represent__wrapper container"><b class="represetnt__title">Милые штуки ручной работы для дома</b>
-      <ul class="represent-list">
-        <li class="represent-list__item"><a class="represent-list__link" href="#">Предметы интерьера</a></li>
-        <li class="represent-list__item"><a class="represent-list__link" href="#">Детские игрушки</a></li>
+      <ul class="represent__list">
+        <li class="represent__list-item"><a class="represent__list-link" href="#">Предметы интерьера</a></li>
+        <li class="represent__list-item"><a class="represent__list-link" href="#">Детские игрушки</a></li>
       </ul>
     </div>
   </section>
   <section class="week-product">
-    <div class="week-product__wrapper">
+    <div class="week-product__wrapper container">
       <div class="week-product__title-wrapper">
-        <h2 class="week-product__title">Товар недели</h2>
-        <h2 class="product-title title__h2">Вязаные корзинки  </h2>
+        <h2 class="week-product__mini-title">Товар недели</h2>
+        <h3 class="week-product__title">Вязаные корзинки  </h3>
       </div>
       <div class="week-product__dscr-wrapper">
         <p class="week-product__dscr">
@@ -61,29 +72,35 @@
             <td class="data-table__td data-table__value">15 см</td>
           </tr>
         </table>
-        <div class="week-product__img-wrapper"><img class="week-product__img"/></div>
+        <div class="week-product__img-wrapper">
+          <picture>
+            <source media="(max-width:767px)" srcset="imgs/mobile/triple-set-mobile@1x.jpg, imgs/mobile/triple-set-mobile@2x.jpg"/>
+            <source media="(max-width:1150px)" srcset="imgs/tablet/triple-set-tablet@1x.jpg, imgs/tablet/triple-set-tablet@2x.jpg"/>
+            <source media="(min-width:1150px)" srcset="imgs/desktop/triple-set-desktop@1x.jpg, imgs/desktop/triple-set-desktop2x.jpg"/><img class="weekpr-oduct__img" src="imgs/mobile/triple-set-mobile@2x.jpg"/>
+          </picture>
+        </div>
         <div class="week-product__price-wrapper">
-          <p class="week-product__price">990 р.</p><a class="week-product__price-btn btn">Заказать</a>
+          <p class="week-product__price">Цена: 990 р.</p><a class="week-product__price-btn btn">Заказать</a>
         </div>
       </div>
     </div>
   </section>
   <section class="about-us">
-    <div class="about-us__wrapper">
-      <h2 class="about-us__title title__h2">Коротко о нас</h2>
+    <div class="about-us__wrapper container">
+      <h2 class="about-us__title">Коротко о нас</h2>
       <ul class="about-us__list">
-        <li class="about-us__list-item">Экологически чистые материалы</li>
-        <li class="about-us__list-item">Скандинавский стиль по российской цене</li>
-        <li class="about-us__list-item">Увеличивает лайки на фотографиях</li>
-        <li class="about-us__list-item">Связано вручную с любовью и умилением</li>
-        <li class="about-us__list-item">Поддержка отечественного производителя</li>
-        <li class="about-us__list-item">Поставляется в подарочной упаковке</li>
+        <li class="about-us__list-item">Экологически<br/>чистые материалы</li>
+        <li class="about-us__list-item">Скандинавский стиль<br/>по российской цене</li>
+        <li class="about-us__list-item">Увеличивает лайки<br/>на фотографиях</li>
+        <li class="about-us__list-item">Связано вручную<br/>с любовью и умилением</li>
+        <li class="about-us__list-item">Поддержка отечественного<br/>производителя</li>
+        <li class="about-us__list-item">Поставляется в<br/>подарочной упаковке</li>
       </ul>
     </div>
   </section>
   <section class="reviews">
-    <div class="reviews__wrapper">
-      <h2 class="reviews__title title__h2">Отзывы</h2>
+    <div class="reviews__wrapper container">
+      <h2 class="reviews__title">Отзывы</h2>
       <p class="reviews__txt">
         Я молодая мама, но всё равно фотографии не
         набирали и близко такого количества лайков,
@@ -92,37 +109,58 @@
         и мои фотографии сразу стали более стильными,
         а также набирают больше лайков!
       </p>
-      <p class="reviews-author__wrapper"><span class="reviews-author__name">Анастасия Красильникова</span><span class="reviews-author__nick">@misssssiskras</span></p>
-      <div class="reviews-arrow__wrapper">
-        <button class="review-arrow left-arrow"></button>
-        <button class="review-arrow right-arrow"></button>
+      <p class="reviews__author-wrapper"><span class="reviews__author-name">Анастасия Красильникова</span><span class="reviews__author-nick">@misssssiskras</span></p>
+      <div class="reviews__arrow-wrapper">
+        <button class="review__arrow review__arrow-left"></button>
+        <button class="review__arrow review__arrow-right"></button>
       </div><a class="reviews__btn btn" href="#">Написать</a>
     </div>
   </section>
   <section class="contacts">
-    <div class="contacts__wrapper">
-      <h2 class="contacts__title title__h2">Контакты    </h2>
-      <table class="contacts-data data-table">
-        <tr class="data-table__tr">
-          <td class="data-table__td data-table__title">e-mail:</td>
-          <td class="data-table__td data-table__value">nfo@mimimishkashop.ru</td>
+    <div class="contacts__wrapper container">
+      <h2 class="contacts__title">Контакты    </h2>
+      <table class="contacts__data-table data-table">
+        <tr class="contacts__data-table-tr data-table__tr">
+          <td class="contacts__data-table-td data-table__td data-table__title" valign="top">e-mail:</td>
+          <td class="contacts__data-table-td data-table__td data-table__value" valign="top">nfo@mimimishkashop.ru</td>
         </tr>
-        <tr class="data-table__tr">
-          <td class="data-table__td data-table__title">Адрес:</td>
-          <td class="data-table__td data-table__value">г. Санкт-Петербург,<br/>ул. Большая Конюшенная,<br/>д. 19/8, офис 101</td>
+        <tr class="contacts__data-table-tr data-table__tr">
+          <td class="contacts__data-table-td data-table__td data-table__title" valign="top">Адрес:</td>
+          <td class="contacts__data-table-td data-table__td data-table__value" valign="top">г. Санкт-Петербург,<br/>ул. Большая Конюшенная,<br/>д. 19/8, офис 101</td>
         </tr>
       </table><a class="contacts__btn btn" href="#">Напишите нам</a>
-      <div class="contacts__map"><img class="map-img"/></div>
+      <div class="contacts__map">
+        <picture>
+          <source media="(max-width:767px)" srcset="imgs/mobile/map-mobile@1x.jpg, imgs/mobile/map-mobile@2x.jpg"/>
+          <source media="(max-width:1150px)" srcset="imgs/tablet/map-tablet@1x.jpg, imgs/tablet/map-tablet@2x.jpg"/>
+          <source media="(min-width:1150px)" srcset="imgs/desktop/map-desktop@1x.jpg, imgs/desktop/map-desktop@2x.jpg"/><img class="contacts__map-img" src="imgs/tablet/map-tablet@2x.jpg"/>
+        </picture>
+      </div>
     </div>
   </section>
 </main>
 <footer class="footer">
-  <div class="footer__wrapper"><a class="footer__logo logo"><img class="logo-image"/></a>
+  <div class="footer__wrapper container"><a class="footer__logo logo">
+      <svg class="logo-image" width="90" height="36">
+        <use xlink:href="imgs/sprite.svg#logo-footer"></use>
+      </svg></a>
     <ul class="fooetr__social-list">
-      <li class="fooetr__social-list-item"><a href="#"></a></li>
-      <li class="fooetr__social-list-item"><a href="#"></a></li>
-      <li class="fooetr__social-list-item"><a href="#"></a></li>
+      <li class="fooetr__social-list-item"><a href="#">
+          <svg width="22" height="22">
+            <use xlink:href="imgs/sprite.svg#icon-insta"></use>
+          </svg></a></li>
+      <li class="fooetr__social-list-item"><a href="#">
+          <svg width="15" height="28">
+            <use xlink:href="imgs/sprite.svg#icon-fb"></use>
+          </svg></a></li>
+      <li class="fooetr__social-list-item"><a href="#">
+          <svg width="24" height="20">
+            <use xlink:href="imgs/sprite.svg#icon-twitter"></use>
+          </svg></a></li>
     </ul>
-    <p class="footer__developed-by">разработано<a class="footer__developed-by-logo" href="#"><img src="" alt="academy-logo"/></a></p>
+    <p class="footer__developed-by">разработано<a class="footer__academy-logo" href="#">
+        <svg class="footer__academy-logo-img" width="27" height="34">
+          <use xlink:href="imgs/sprite.svg#logo-htmlacademy"></use>
+        </svg></a></p>
   </div>
 </footer>

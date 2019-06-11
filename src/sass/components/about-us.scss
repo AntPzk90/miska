@@ -1,0 +1,43 @@
+.about-us{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @media screen and  (min-width:$tablet){
+        padding-bottom: 75px;
+    }
+    @media screen and  (min-width:$desktop){
+        padding-top: 50px;
+    }
+}
+.about-us__title{
+    @include title;
+    margin-bottom: 30px;
+    margin-left: 175px;
+}
+.about-us__list{
+    @include list-reset;
+    @media screen and  (min-width:$tablet){
+        display: flex;
+        flex-wrap: wrap
+    }
+    @media screen and  (min-width:$desktop){
+        box-sizing: border-box;
+        padding: 0 175px;
+    }
+}
+.about-us__list-item{
+    min-height: 100px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    padding-top: 70px;
+    font-size: 17px;
+    line-height: 20px;
+    color: #000;
+    font-weight: bold;
+    @media screen and  (min-width:$tablet){
+        width: 49.5%;
+        font-size: 20px;
+        line-height: 22px;
+        min-height: 110px;
+        margin-bottom: 45px;
+    }
+}

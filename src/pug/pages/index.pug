@@ -7,19 +7,19 @@ block content
             .represent__wrapper.container
                 b.represetnt__title
                     | Милые штуки ручной работы для дома
-                ul.represent-list
-                    li.represent-list__item
-                        a(href="#").represent-list__link
+                ul.represent__list
+                    li.represent__list-item
+                        a(href="#").represent__list-link
                             | Предметы интерьера
-                    li.represent-list__item
-                        a(href="#").represent-list__link
+                    li.represent__list-item
+                        a(href="#").represent__list-link
                             | Детские игрушки
         section.week-product
-            .week-product__wrapper
+            .week-product__wrapper.container
                 .week-product__title-wrapper
-                    h2.week-product__title
+                    h2.week-product__mini-title
                         | Товар недели
-                    h2.product-title.title__h2
+                    h3.week-product__title
                         | Вязаные корзинки  
                 .week-product__dscr-wrapper
                     p.week-product__dscr
@@ -42,32 +42,48 @@ block content
                             td.data-table__td.data-table__value
                                 | 15 см
                     .week-product__img-wrapper
-                        img.week-product__img
+                        picture
+                            source(media="(max-width:767px)", srcset="imgs/mobile/triple-set-mobile@1x.jpg, imgs/mobile/triple-set-mobile@2x.jpg")
+                            source(media="(max-width:1150px)", srcset="imgs/tablet/triple-set-tablet@1x.jpg, imgs/tablet/triple-set-tablet@2x.jpg")
+                            source(media="(min-width:1150px)", srcset="imgs/desktop/triple-set-desktop@1x.jpg, imgs/desktop/triple-set-desktop2x.jpg")
+                            img(src="imgs/mobile/triple-set-mobile@2x.jpg").weekpr-oduct__img
                     .week-product__price-wrapper
                         p.week-product__price
-                            | 990 р.
+                            | Цена: 990 р.
                         a.week-product__price-btn.btn
                             | Заказать
         section.about-us
-            .about-us__wrapper
-                h2.about-us__title.title__h2
+            .about-us__wrapper.container
+                h2.about-us__title
                     | Коротко о нас
                 ul.about-us__list
                     li.about-us__list-item
-                        | Экологически чистые материалы
+                        | Экологически
+                        br
+                        | чистые материалы
                     li.about-us__list-item
-                        | Скандинавский стиль по российской цене
+                        | Скандинавский стиль
+                        br
+                        | по российской цене
                     li.about-us__list-item
-                        | Увеличивает лайки на фотографиях
+                        | Увеличивает лайки
+                        br
+                        |на фотографиях
                     li.about-us__list-item
-                        | Связано вручную с любовью и умилением
+                        | Связано вручную
+                        br
+                        | с любовью и умилением
                     li.about-us__list-item
-                        | Поддержка отечественного производителя
+                        | Поддержка отечественного
+                        br
+                        | производителя
                     li.about-us__list-item
-                        | Поставляется в подарочной упаковке
+                        | Поставляется в
+                        br
+                        | подарочной упаковке
         section.reviews
-            .reviews__wrapper
-                h2.reviews__title.title__h2
+            .reviews__wrapper.container
+                h2.reviews__title
                     | Отзывы
                 p.reviews__txt
                     | Я молодая мама, но всё равно фотографии не
@@ -76,30 +92,30 @@ block content
                     | я накупила аксессуаров и игрушек в Мишке,
                     | и мои фотографии сразу стали более стильными,
                     | а также набирают больше лайков!
-                p.reviews-author__wrapper
-                    span.reviews-author__name
+                p.reviews__author-wrapper
+                    span.reviews__author-name
                         | Анастасия Красильникова
-                    span.reviews-author__nick
+                    span.reviews__author-nick
                         | @misssssiskras
-                .reviews-arrow__wrapper
-                    button.review-arrow.left-arrow
-                    button.review-arrow.right-arrow
+                .reviews__arrow-wrapper
+                    button.review__arrow.review__arrow-left
+                    button.review__arrow.review__arrow-right
                 a(href="#").reviews__btn.btn
                     | Написать
         section.contacts
-            .contacts__wrapper
-                h2.contacts__title.title__h2
+            .contacts__wrapper.container
+                h2.contacts__title
                     | Контакты    
-                table.contacts-data.data-table
-                    tr.data-table__tr
-                        td.data-table__td.data-table__title
+                table.contacts__data-table.data-table
+                    tr.contacts__data-table-tr.data-table__tr
+                        td(valign="top").contacts__data-table-td.data-table__td.data-table__title
                             | e-mail:
-                        td.data-table__td.data-table__value
+                        td(valign="top").contacts__data-table-td.data-table__td.data-table__value
                             | nfo@mimimishkashop.ru
-                    tr.data-table__tr
-                        td.data-table__td.data-table__title
+                    tr.contacts__data-table-tr.data-table__tr
+                        td(valign="top").contacts__data-table-td.data-table__td.data-table__title
                             | Адрес:
-                        td.data-table__td.data-table__value
+                        td(valign="top").contacts__data-table-td.data-table__td.data-table__value
                             | г. Санкт-Петербург,
                             br
                             | ул. Большая Конюшенная,
@@ -108,4 +124,9 @@ block content
                 a(href="#").contacts__btn.btn
                     | Напишите нам
                 .contacts__map
-                    img.map-img
+                    picture
+                        source(media="(max-width:767px)", srcset="imgs/mobile/map-mobile@1x.jpg, imgs/mobile/map-mobile@2x.jpg")
+                        source(media="(max-width:1150px)", srcset="imgs/tablet/map-tablet@1x.jpg, imgs/tablet/map-tablet@2x.jpg")
+                        source(media="(min-width:1150px)", srcset="imgs/desktop/map-desktop@1x.jpg, imgs/desktop/map-desktop@2x.jpg")
+                        img(src="imgs/tablet/map-tablet@2x.jpg").contacts__map-img
+                    

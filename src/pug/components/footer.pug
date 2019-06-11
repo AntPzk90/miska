@@ -1,15 +1,23 @@
 footer.footer
-    .footer__wrapper
+    .footer__wrapper.container
         a.footer__logo.logo
-            img.logo-image
+            svg(width="90",height="36").logo-image
+                use(xlink:href="imgs/sprite.svg#logo-footer")
         ul.fooetr__social-list
             li.fooetr__social-list-item
                 a(href="#")
+                    svg(width="22",height="22")
+                        use(xlink:href="imgs/sprite.svg#icon-insta")
             li.fooetr__social-list-item
                 a(href="#")
+                    svg(width="15",height="28")
+                        use(xlink:href="imgs/sprite.svg#icon-fb")
             li.fooetr__social-list-item
                 a(href="#")
+                    svg(width="24",height="20")
+                        use(xlink:href="imgs/sprite.svg#icon-twitter")
         p.footer__developed-by
             | разработано
-            a(href="#").footer__developed-by-logo
-                img(src="", alt="academy-logo")
+            a(href="#").footer__academy-logo
+                svg(width="27",height="34").footer__academy-logo-img
+                    use(xlink:href="imgs/sprite.svg#logo-htmlacademy")

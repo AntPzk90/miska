@@ -6,19 +6,35 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         link(rel="stylesheet", href="../css/style.css")
         block title
-        title index
+            title index
     body
         header.header
             .header__wrapper.container
-                nav.main-nav
-                    a.header__logo.logo
-                        img.logo-image
-                    ul.main-nav__list.site-list
+                button.header__mobile.header__mobile--close
+                a(href="index.html").header__logo.logo
+                    picture.header__logo-picture
+                        source(media="(max-width:768px)", srcset="imgs/sprite.svg#logo-mobile")
+                        source(media="(max-width:1150px)", srcset="imgs/sprite.svg#logo-tablet")
+                        source(media="(min-width:1150px)", srcset="imgs/sprite.svg#logo-desktop")
+                        img(src="imgs/sprite.svg#logo-mobile", alt="logo")
+                nav.header__main-nav
+                    ul.site-list
                         +navList(navItems)
-                .header__user-wrapper.user-block
-                    form.user-block__search.search-form
-                        input.search-form__input
-                        button.search-form__btn.hidden-btn(type="sybmit")
+                .header__user-wrapper
+                    form.header__search.search-form
+                        input(type="text",
+                              name="search",
+                              placeholder="Поиск по сайту").search-form__input
+                        button.search-form__hidden-btn(type="sybmit")
                             | найти
-                    a(href="#").user-block__basket-link
+                    a(href="#").header__basket-link.basket-link
                         | Корзина: пока пуста
+                p.header__delivery
+                    | Бесплатная доставка по России
+                ul.header__more-list
+                    li.header__more-list-item
+                        a(href="#")
+                            | Новые поступления
+                    li.header__more-list-item
+                        a(href="#")
+                            | Распродажа
