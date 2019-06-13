@@ -47,7 +47,6 @@
     }
 }
 @mixin noneborder{
-    position: static;
     &::after{
         display: none;
     }

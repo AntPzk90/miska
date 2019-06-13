@@ -130,6 +130,7 @@
     display: block;
 }
 .week-product__price-wrapper{
+    width: 100%;
     @media screen and  (min-width:$tablet){
         width: 100%;
         max-width: 334px;

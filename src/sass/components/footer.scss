@@ -38,6 +38,13 @@
         margin: 0;
     }
 }
+a{
+    &:hover{
+        .fooetr__social-list-img{
+            fill: #63d1bb;
+        }
+    }
+}
 .footer__developed-by{
     padding-top: 22px;
     width: 100%;

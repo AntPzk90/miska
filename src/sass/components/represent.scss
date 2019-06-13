@@ -87,8 +87,41 @@
     padding: 24px 30px;
     background-color: #63d1bb;
     text-align: left;
+    position:relative;
+    &:after{
+        content: "";
+        display: block;
+        width: 42px;
+        height: 62px;
+        position: absolute;
+        top: 24px;
+        right: 30px;
+        margin-left:-10.5px;
+        background-image: url("../imgs/sprite.svg#icon-interior");
+        background-size: cover;
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+        background-color:transparent;
+        opacity:0.8;
+    }
     &:nth-child(2n){
         background-color: #56c3b2;
+        &:after{
+            content: "";
+            display: block;
+            width: 62px;
+            height: 62px;
+            position: absolute;
+            top: 24px;
+            right: 20px;
+            margin-left:-10.5px;
+            background-image: url("../imgs/sprite.svg#icon-toy");
+            background-size: cover;
+            background-position: 50% 0;
+            background-repeat: no-repeat;
+            background-color:transparent;
+            opacity:0.8;
+        }
     }
     a{
         color: #fff;
@@ -97,11 +130,11 @@
         font-weight: bold;
         text-decoration: none;
         display: inline-block;
-        width: 130px;
+        width: 100%;
         @media screen and  (min-width:$desktop){
             font-size: 20px;
             line-height: 30px;  
-          }
+        }
     }
     @media screen and  (min-width:$tablet){
       width: 50%;
