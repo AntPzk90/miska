@@ -1,2 +1,2 @@
-https://antpzk90.github.io/mishka/bulid
+https://antpzk90.github.io/miska/bulid
 # miska
