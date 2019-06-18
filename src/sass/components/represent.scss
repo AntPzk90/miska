@@ -130,10 +130,11 @@
         font-weight: bold;
         text-decoration: none;
         display: inline-block;
+        vertical-align: top;
         width: 100%;
         @media screen and  (min-width:$desktop){
             font-size: 20px;
-            line-height: 30px;  
+            line-height: 30px; 
         }
     }
     @media screen and  (min-width:$tablet){
