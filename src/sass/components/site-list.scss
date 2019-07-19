@@ -12,7 +12,7 @@
 .site-list__item{
     text-align: center;
     @include border;
-    a{
+    .site-list__link{
         text-decoration: none;
         display: block;
         width: 100%;
@@ -22,6 +22,10 @@
         color: #000;
         cursor: pointer;
         text-transform: unset;
+        @media screen and  (min-width:$tablet){
+            padding-top: 10px;
+            font-size: 15px;
+        }
         @media screen and  (min-width:$desktop){
             padding: 32px 0;
         }
@@ -31,11 +35,15 @@
         width: 49%;
         text-align: left;
         &:nth-child(2n){
-            text-align: right;
             border: none;
         }
     }
     @media screen and  (min-width:$desktop){
         border-right: 1px solid #eee;
+        &:nth-child(2n){
+            text-align: right;
+            box-sizing: border-box;
+            padding-right: 16px;
+        }
     }
 }

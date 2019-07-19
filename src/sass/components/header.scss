@@ -2,7 +2,7 @@
     position: relative;
     z-index: 2;
     @media screen and  (min-width:$tablet){
-        margin-bottom: -88px;
+        margin-bottom: -73px;
     }
     @media screen and  (min-width:$desktop){
         margin-bottom: -67px;
@@ -16,7 +16,7 @@
     text-align: center;
     @media screen and  (min-width:$tablet){
         height: 44px;
-        width: 41.5%;
+        width: 49%;
         order: 1;
     }
     @media screen and  (min-width:$desktop){
@@ -84,7 +84,7 @@
         font-size: 15px;
         line-height: 24px;
         align-self: flex-start;
-        padding-top: 32px;
+        padding-top: 18px;
         padding-bottom: 32px;
         margin: 0;
     }
@@ -109,8 +109,11 @@
     flex-grow: 1;
     &:nth-child(2n){
         text-align: right;
+        @media screen and  (min-width:$desktop){
+           text-align: left;
+        }
     }
-    a{
+    .header__more-list-link{
         display: inline-block;
         vertical-align: baseline;
         padding-top: 22px;
@@ -132,6 +135,7 @@
 }
 .header__user-wrapper{
     @media screen and  (min-width:$tablet){
+        width: 49%;
         order: 2;
         display: flex;
         justify-content: space-between;
@@ -143,6 +147,7 @@
         }
     }
     @media screen and  (min-width:$desktop){
+        width: 344px;
         order: 3;
         flex-grow: 0;
         @include noneborder;

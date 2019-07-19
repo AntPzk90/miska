@@ -89,7 +89,7 @@ gulp.task('scripts', () => {
 
 //Таск для очистки папки build
 gulp.task('del', () => {
-   return del(['build/*'])
+   return del(['build/*'],{dryRun: true})
 });
 //Такс для pug
 gulp.task('pug', function buildHTML() {
@@ -161,4 +161,4 @@ gulp.task('watch', () => {
 });
 
 //Таск по умолчанию, Запускает del, styles, scripts и watch
-gulp.task('start', gulp.series( gulp.parallel('styles', 'scripts','image-compress','svg-sprite','pug'), 'watch'));
+gulp.task('start', gulp.series('del', gulp.parallel('styles', 'scripts','image-compress','svg-sprite','pug'), 'watch'));

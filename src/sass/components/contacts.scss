@@ -1,6 +1,9 @@
 .contacts{
-    padding-top: 70px;
+    padding-top: 30px;
     padding-bottom: 55px;
+    @media screen and  (min-width:$tablet){
+        padding-top: 70px;
+    }
     @media screen and  (min-width:$desktop){
         padding-bottom: 105px;
     }
@@ -60,7 +63,7 @@
     }
 }
 .contacts__data-table{
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     order: 2;
     tbody{
         display: contents;
