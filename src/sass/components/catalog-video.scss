@@ -95,7 +95,9 @@
     height: 100%;
     object-fit: inherit;
 }
-.catalog-items__cart-svg{
+.catalog-items__play-btn-svg{
+    width: 102px;
+    height: 78px;
     fill:#62d1ba;
 }
 .catalog-video__play-btn{
@@ -108,7 +110,7 @@
     left:50%;
     margin-left:-51px;
     margin-top:-39px;
-    &:hover .catalog-items__cart-svg{
+    &:hover .catalog-items__play-btn-svg{
         cursor:pointer;
         fill:red;
     }

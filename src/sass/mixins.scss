@@ -77,3 +77,7 @@
         }
     }
 }
+@mixin fieldset-border {
+    border: none;
+    border-top: 1px solid $blue;
+}

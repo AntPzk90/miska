@@ -1,0 +1,96 @@
+extends .././layouts/main-layout.pug
+block title
+    title
+        | form
+block content
+    main
+        section.catalog-title
+            div.catalog-title__wrapper.container
+                h2.catalog-title__main-title
+                    | Вязание на заказ
+        form(action="#",method="POST").form
+            .form__wrapper
+                .form__slogan
+                    p.form__slogan-wrapper.container
+                        | Мы будем рады воплотить в жизнь ваши пожелания!
+                        | Заполните простую форму заказа
+                        | и мы свяжемся с вами, чтобы уточнить детали.
+                fieldset.form__fieldset-type
+                    .form__fieldset-type-wrapper.container
+                        legend.form__type-legend.legend
+                            | Тип
+                        .form__radio-wrapper
+                            input(type="radio", name="radio", id="accesory",).form__input-radio
+                            label(for="accesory").form__label-type.label
+                                | Аксессуар для интерьера
+                        .form__radio-wrapper
+                            input(type="radio", name="radio", id="toy").form__input-radio
+                            label(for="toy").form__label-type.label
+                                | Детская игрушка
+                fieldset.form__fieldset-color
+                    .form__fieldset-color-wrapper.container
+                        legend.form__color-legend.legend
+                            | Цвет
+                        .form__checkbox-wrapper
+                            input(type="checkbox", name="white", id="white").form__input-checkbox
+                            label(for="white").form__label-color.label
+                                | Белый
+                        .form__checkbox-wrapper
+                            input(type="checkbox", name="grey", id="grey").form__input-checkbox
+                            label(for="grey").form__label-color.label
+                                | Серый
+                        .form__checkbox-wrapper
+                            input(type="checkbox", name="tif", id="tif").form__input-checkbox
+                            label(for="tif").form__label-color.label
+                                | &laquo;
+                                | Тиффани
+                                | &raquo;
+                        .form__checkbox-wrapper
+                            input(type="checkbox", name="black", id="black").form__input-checkbox
+                            label(for="black").form__label-color.label
+                                | Чёрный
+                        .form__checkbox-wrapper
+                            input(type="checkbox", name="pink", id="pink").form__input-checkbox
+                            label(for="pink").form__label-color.label
+                                | Розовый
+                        .form__checkbox-wrapper
+                            input(type="checkbox", name="orange", id="orange").form__input-checkbox
+                            label(for="orange").form__label-color.label
+                                | Оранжевый
+                fieldset.form__fieldset-name
+                    .form__fieldset-name-wrapper.container
+                        legend.form__legend-name.legend
+                            | ФИО
+                        .form__text-name-wrapper
+                            label(for="name").form__label-name
+                                | Имя
+                            input(type="text", name="name", id="name", placeholder="Введите ваше имя *",require).form__input-name
+                        .form__text-name-wrapper
+                            label(for="surname").form__label-name
+                                | Фамилия
+                            input(type="text", name="surname", id="surname", placeholder="Укажите фамилию *",require).form__input-name
+                        .form__text-name-wrapper
+                            label(for="father-name").form__label-name
+                                | Отчество
+                            input(type="text", name="father-name", id="father-name", placeholder="Отчество, если желаете").form__input-name
+                fieldset.form__fieldset-tel
+                    .form__fieldset-tel-wrapper.container
+                        legend.form__legend-tel.legend
+                            | ТЕЛ
+                        input(type="text", name="tel", placeholder="+7 XXX XXX XX XX *",require).form__input-tel
+                fieldset.form__fieldset-email
+                    .form__fieldset-email-wrapper.container
+                        legend.form__legend-email.legend
+                            | E-mail
+                        input(type="email", name="email", id="email", placeholder="Ваш email*",require).form__input-email
+                fieldset.form__fieldset-dop
+                    .form__fieldset-dop-wrapper.container
+                        legend.form__legend-dop.legend
+                            | ДОП
+                        textarea(name="dop", placeholder="Опишите все ваши пожелания к заказу").form__textarea-dop
+                .form__btn-wrapper.container
+                    p.form__require-fields
+                        | * Поля обязательны для заполнения
+                    button(type="submit").form__btn.btn
+                        | Отправить заказ
+                              
