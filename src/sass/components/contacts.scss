@@ -97,6 +97,9 @@
             bottom: 0;
             left: 0;
         }
+        &:active{
+            opacity: 0.4;
+        }
     }
 }
 .contacts__data-table-tr:last-child{
@@ -104,7 +107,18 @@
         padding-top: 30px;
     }
 }
-
+.contacts__data-table-mail-link{
+    color: $text-color;
+    text-decoration: none;
+    &:hover,
+    &:focus{
+        color: $blue;
+    }
+    &:active{
+        color: $blue;
+        opacity: 0.4;
+    }
+}
 .contacts__map{
     width: calc(100% + 60px);
     margin-left: -30px;

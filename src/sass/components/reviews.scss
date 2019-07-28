@@ -108,6 +108,13 @@
     height: 50px;
     background-color: transparent;
     border: none;
+    cursor: pointer;
+    &:hover{
+        opacity: 0.8;
+    }
+    &:active{
+        opacity: 0.4;
+    }
 }
 .review__arrow-left{
     border-right: 1px solid #eee;

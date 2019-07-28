@@ -72,6 +72,12 @@
         min-height: 458px;
         padding-bottom: 0;
     }
+    &:hover{
+        box-shadow: 0px 5px 8px -1px #cccccc;
+    }
+    &:active{
+        box-shadow: 0px 3px 2px 0px #cccccc;
+    }
 }
 .catalog-video__video-wrapper{
     height: 150px;
@@ -113,6 +119,12 @@
     &:hover .catalog-items__play-btn-svg{
         cursor:pointer;
         fill:red;
+        transform: scale(1.2);
+    }
+   
+    &:active{
+        cursor:pointer;
+        transform: scale(0.8);
     }
 }
 .catalog-video__txt{

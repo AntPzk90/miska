@@ -25,8 +25,13 @@
     @media screen and  (min-width:$tablet){
         display: block;
         margin-right: 10%;
-        &:hover{
+        &:hover,
+        &:focus{
             fill: #63d1bb;
+        }
+        &:active{
+            fill: #63d1bb;
+            opacity: 0.4;
         }
     }
 }
@@ -54,8 +59,14 @@
             fill: #63d1bb;
         }
     }
+    &:active{
+        .fooetr__social-list-img{
+            fill: #63d1bb;
+            opacity: 0.4;
+        }
+    }
 }
-.footer__developed-by{
+.footer__academy-logo{
     padding-top: 22px;
     width: 100%;
     box-sizing: border-box;
@@ -66,6 +77,8 @@
     justify-content: space-between;
     font-size: 19px;
     font-weight: bold;
+    text-decoration: none;
+    color: #000;
     @media screen and  (min-width:$tablet){
         width: 180px;
         border: none;
@@ -77,11 +90,20 @@
         margin-left: -5px;
         margin-top: 10px;
     }
+    &:active{
+        opacity: 0.4;
+    }
 }
 .footer__academy-logo{
     &:hover{
         svg{
             fill: #63d1bb;
+        }
+    }
+    &:hover{
+        .fooetr__social-list-img{
+            fill: #63d1bb;
+            opacity: 0.4;
         }
     }
 }

@@ -37,6 +37,11 @@
             background-color:transparent;
         }
     }
+    &:hover{
+        &:after{
+            background-image: url("../imgs/sprite.svg#icon-search-hover"); 
+        }
+    }
 }
 .search-form__input{
     height: 78px;
