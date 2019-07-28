@@ -31,32 +31,31 @@ block content
                     .form__fieldset-color-wrapper.container
                         legend.form__color-legend.legend
                             | Цвет
-                        .form__checkbox-wrapper
-                            input(type="checkbox", name="white", id="white").form__input-checkbox
-                            label(for="white").form__label-color.label
-                                | Белый
-                        .form__checkbox-wrapper
-                            input(type="checkbox", name="grey", id="grey").form__input-checkbox
-                            label(for="grey").form__label-color.label
-                                | Серый
-                        .form__checkbox-wrapper
-                            input(type="checkbox", name="tif", id="tif").form__input-checkbox
-                            label(for="tif").form__label-color.label
-                                | &laquo;
-                                | Тиффани
-                                | &raquo;
-                        .form__checkbox-wrapper
-                            input(type="checkbox", name="black", id="black").form__input-checkbox
-                            label(for="black").form__label-color.label
-                                | Чёрный
-                        .form__checkbox-wrapper
-                            input(type="checkbox", name="pink", id="pink").form__input-checkbox
-                            label(for="pink").form__label-color.label
-                                | Розовый
-                        .form__checkbox-wrapper
-                            input(type="checkbox", name="orange", id="orange").form__input-checkbox
-                            label(for="orange").form__label-color.label
-                                | Оранжевый
+                        .form__list-checkbox-wrapper
+                            .form__checkbox-wrapper
+                                input(type="checkbox", name="white", id="white").form__input-checkbox
+                                label(for="white").form__label-color.label
+                                    | Белый
+                            .form__checkbox-wrapper
+                                input(type="checkbox", name="grey", id="grey").form__input-checkbox
+                                label(for="grey").form__label-color.label
+                                    | Серый
+                            .form__checkbox-wrapper
+                                input(type="checkbox", name="tif", id="tif").form__input-checkbox
+                                label(for="tif").form__label-color.label
+                                    | &laquo;Тиффани&raquo;
+                            .form__checkbox-wrapper
+                                input(type="checkbox", name="black", id="black").form__input-checkbox
+                                label(for="black").form__label-color.label
+                                    | Чёрный
+                            .form__checkbox-wrapper
+                                input(type="checkbox", name="pink", id="pink").form__input-checkbox
+                                label(for="pink").form__label-color.label
+                                    | Розовый
+                            .form__checkbox-wrapper
+                                input(type="checkbox", name="orange", id="orange").form__input-checkbox
+                                label(for="orange").form__label-color.label
+                                    | Оранжевый
                 fieldset.form__fieldset-name
                     .form__fieldset-name-wrapper.container
                         legend.form__legend-name.legend
@@ -77,12 +76,14 @@ block content
                     .form__fieldset-tel-wrapper.container
                         legend.form__legend-tel.legend
                             | ТЕЛ
-                        input(type="text", name="tel", placeholder="+7 XXX XXX XX XX *",require).form__input-tel
+                        .form__input-tel-wrapper 
+                            input(type="text", name="tel", placeholder="+7 XXX XXX XX XX *",require).form__input-tel
                 fieldset.form__fieldset-email
                     .form__fieldset-email-wrapper.container
                         legend.form__legend-email.legend
                             | E-mail
-                        input(type="email", name="email", id="email", placeholder="Ваш email*",require).form__input-email
+                        .form__input-email-wrapper
+                            input(type="email", name="email", id="email", placeholder="Ваш email*",require).form__input-email
                 fieldset.form__fieldset-dop
                     .form__fieldset-dop-wrapper.container
                         legend.form__legend-dop.legend

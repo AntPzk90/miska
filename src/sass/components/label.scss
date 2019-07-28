@@ -3,4 +3,8 @@ label{
     line-height: 18px;
     color: #000;
     font-weight: bold;
+    @media screen and  (min-width:$tablet){
+        font-size: 19px;
+        line-height: 20px;
+    }
 }

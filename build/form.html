@@ -68,33 +68,31 @@
       <fieldset class="form__fieldset-color">
         <div class="form__fieldset-color-wrapper container">
           <legend class="form__color-legend legend">Цвет</legend>
-          <div class="form__checkbox-wrapper">
-            <input class="form__input-checkbox" type="checkbox" name="white" id="white"/>
-            <label class="form__label-color label" for="white">Белый</label>
-          </div>
-          <div class="form__checkbox-wrapper">
-            <input class="form__input-checkbox" type="checkbox" name="grey" id="grey"/>
-            <label class="form__label-color label" for="grey">Серый</label>
-          </div>
-          <div class="form__checkbox-wrapper">
-            <input class="form__input-checkbox" type="checkbox" name="tif" id="tif"/>
-            <label class="form__label-color label" for="tif">
-              &laquo;
-              Тиффани
-              &raquo;
-            </label>
-          </div>
-          <div class="form__checkbox-wrapper">
-            <input class="form__input-checkbox" type="checkbox" name="black" id="black"/>
-            <label class="form__label-color label" for="black">Чёрный</label>
-          </div>
-          <div class="form__checkbox-wrapper">
-            <input class="form__input-checkbox" type="checkbox" name="pink" id="pink"/>
-            <label class="form__label-color label" for="pink">Розовый</label>
-          </div>
-          <div class="form__checkbox-wrapper">
-            <input class="form__input-checkbox" type="checkbox" name="orange" id="orange"/>
-            <label class="form__label-color label" for="orange">Оранжевый</label>
+          <div class="form__list-checkbox-wrapper">
+            <div class="form__checkbox-wrapper">
+              <input class="form__input-checkbox" type="checkbox" name="white" id="white"/>
+              <label class="form__label-color label" for="white">Белый</label>
+            </div>
+            <div class="form__checkbox-wrapper">
+              <input class="form__input-checkbox" type="checkbox" name="grey" id="grey"/>
+              <label class="form__label-color label" for="grey">Серый</label>
+            </div>
+            <div class="form__checkbox-wrapper">
+              <input class="form__input-checkbox" type="checkbox" name="tif" id="tif"/>
+              <label class="form__label-color label" for="tif">&laquo;Тиффани&raquo;</label>
+            </div>
+            <div class="form__checkbox-wrapper">
+              <input class="form__input-checkbox" type="checkbox" name="black" id="black"/>
+              <label class="form__label-color label" for="black">Чёрный</label>
+            </div>
+            <div class="form__checkbox-wrapper">
+              <input class="form__input-checkbox" type="checkbox" name="pink" id="pink"/>
+              <label class="form__label-color label" for="pink">Розовый</label>
+            </div>
+            <div class="form__checkbox-wrapper">
+              <input class="form__input-checkbox" type="checkbox" name="orange" id="orange"/>
+              <label class="form__label-color label" for="orange">Оранжевый</label>
+            </div>
           </div>
         </div>
       </fieldset>
@@ -118,13 +116,17 @@
       <fieldset class="form__fieldset-tel">
         <div class="form__fieldset-tel-wrapper container">
           <legend class="form__legend-tel legend">ТЕЛ</legend>
-          <input class="form__input-tel" type="text" name="tel" placeholder="+7 XXX XXX XX XX *" require="require"/>
+          <div class="form__input-tel-wrapper"> 
+            <input class="form__input-tel" type="text" name="tel" placeholder="+7 XXX XXX XX XX *" require="require"/>
+          </div>
         </div>
       </fieldset>
       <fieldset class="form__fieldset-email">
         <div class="form__fieldset-email-wrapper container">
           <legend class="form__legend-email legend">E-mail</legend>
-          <input class="form__input-email" type="email" name="email" id="email" placeholder="Ваш email*" require="require"/>
+          <div class="form__input-email-wrapper">
+            <input class="form__input-email" type="email" name="email" id="email" placeholder="Ваш email*" require="require"/>
+          </div>
         </div>
       </fieldset>
       <fieldset class="form__fieldset-dop">

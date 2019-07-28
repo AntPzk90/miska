@@ -19,4 +19,18 @@
         left: 62px;
         top: 7px;
     }
+    @media screen and  (min-width:$tablet){
+        display: inline;
+        width: 100px;
+        padding-left: 0;
+        position: absolute;
+        left:50px;
+        top:45px;
+        &:after{
+            display: none;
+        }
+    }
+    @media screen and  (min-width:$desktop){
+        left: 60px;
+    }
 }
