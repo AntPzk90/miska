@@ -371,12 +371,14 @@ a {
   display: block;
   height: 36px;
   padding: 22px 0;
-  width: 100%;
+  width: 50%;
+  margin: 0 auto;
   text-align: center; }
   @media screen and (min-width: 768px) {
     .header__logo {
       height: 44px;
       width: 49%;
+      margin: 0;
       -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
       order: 1; } }
@@ -581,18 +583,7 @@ a {
     width: 80px; } }
 
 .logo {
-  position: relative;
   position: relative; }
-  .logo:after {
-    content: "";
-    position: absolute;
-    bottom: -1px;
-    left: -30px;
-    display: block;
-    width: calc(100% + 60px);
-    height: 1px;
-    background-color: #eee;
-    z-index: 1; }
   .logo .logo__image-tablet {
     display: none; }
   .logo .logo__image-desktop {
@@ -644,6 +635,21 @@ a {
     height: 1px;
     background-color: #eee;
     z-index: 1; }
+  .site-list__item:nth-child(1) {
+    position: relative; }
+    .site-list__item:nth-child(1):before {
+      content: "";
+      position: absolute;
+      top: -1px;
+      left: -30px;
+      display: block;
+      width: calc(100% + 50px);
+      height: 1px;
+      background-color: #eee;
+      z-index: 1; }
+      @media screen and (min-width: 768px) {
+        .site-list__item:nth-child(1):before {
+          display: none; } }
   .site-list__item .site-list__link {
     text-decoration: none;
     display: block;
@@ -865,8 +871,7 @@ a {
       background-image: url("../imgs/tablet/hero-tablet@2x.jpg"); } }
   @media screen and (min-width: 1150px) {
     .represent {
-      background-image: url("../imgs/desktop/hero-desktop@1x.jpg");
-      background-size: cover; } }
+      background-image: url("../imgs/desktop/hero-desktop@1x.jpg"); } }
   @media screen and (min-width: 1150px) and (-webkit-min-device-pixel-ratio: 1.4583333333333333) and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-width: 1150px) and (min-resolution: 140dpi) and (min-resolution: 1.5dppx) {
     .represent {
       background-image: url("../imgs/desktop/hero-desktop@2x.jpg"); } }

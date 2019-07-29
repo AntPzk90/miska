@@ -12,11 +12,13 @@
     display: block;
     height: 36px;
     padding: 22px 0;
-    width: 100%;
+    width: 50%;
+    margin: 0 auto;
     text-align: center;
     @media screen and  (min-width:$tablet){
         height: 44px;
         width: 49%;
+        margin: 0;
         order: 1;
     }
     @media screen and  (min-width:$desktop){
